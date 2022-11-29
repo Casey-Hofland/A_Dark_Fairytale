@@ -30,6 +30,6 @@ C:\Program Files\Unity\Hub\Editor\<Unity Version>\Editor\Data\Tools\UnityYAMLMer
 /Applications/Unity/Unity.app/Contents/Tools/UnityYAMLMerge
 ```
 
-Replace <path to UnityYAMLMerge> with the correct path. **Make sure the path is correct.** If you can't find the UnityYAMLMerge program anywhere, contact me and we'll resolve the issue.
+Replace `<path to UnityYAMLMerge>` with the correct path. **Make sure the path is correct.** If you can't find the UnityYAMLMerge program anywhere, contact me and we'll resolve the issue.
 
 Now you should have UnityYAMLMerge installed for resolving scene (amongst others) merge conflicts.
