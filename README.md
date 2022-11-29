@@ -7,7 +7,7 @@ Go to File > Clone. In github, click Code (green button topright), make sure HTT
 ## Setting up Scene Merging
 Scene merging is very important because otherwise things suck butt. NOTE: this won't solve all problems forever, but it may help prevent simple merge conflicts that can be resolved automatically. **It is still good practice to let your team know when you're making changes to a scene.**
 
-** Create a `.gitconfig` file in the cloned repository and add the following:
+**Create a `.gitconfig` file in the cloned repository and add the following:**
 
 ```
 [merge]
