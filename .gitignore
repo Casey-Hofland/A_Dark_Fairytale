@@ -118,6 +118,3 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
-# Ignore the .gitconfig file to allow for custom .gitconfigs on everyones personal system
-.gitconfig
