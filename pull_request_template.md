@@ -1,8 +1,8 @@
-* **Changes Introduced**
+**Changes Introduced**
 ...
 
-* **Behavior Before**
+**Behavior Before**
 ...
 
-* **New Behavior**
+**New Behavior**
 ...
