@@ -6,6 +6,7 @@ using UnityEngine.Rendering.Universal;
 [RequireComponent(typeof(Camera))]
 public class VolumeUpdater : MonoBehaviour
 {
+    [Tooltip("A timestep for how often the cameras post processing should be updated. Change the Camera's Volumes Update Mode to \"Via Scripting\" in order for this to take effect.")]
     [SerializeField] private float _updateFrequency = 1 / 60f;
     public float updateFrequency 
     {
