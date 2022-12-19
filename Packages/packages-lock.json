@@ -279,6 +279,15 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.xsduan.hierarchy-folders": {
+      "version": "https://github.com/xsduan/unity-hierarchy-folders.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {
+        "com.unity.settings-manager": "1.0.1"
+      },
+      "hash": "70af83b8e3eb67c4b86c7af07f2d6f5210d92935"
+    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
