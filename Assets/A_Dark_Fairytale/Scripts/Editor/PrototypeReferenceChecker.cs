@@ -48,25 +48,43 @@ public static class PrototypeReferenceChecker
     [MenuItem(menuName + "Check Assets", priority = 1)]
     public static void CheckAssets()
     {
+        //var progressId = Progress.Start($"Check all assets for references to the \"{prototypeDirectory}\" folder.");
+        //int currentStep = 0;
+        //const int totalSteps = 6;
+
+        //Progress.Report(progressId, ++currentStep, totalSteps, "Get Prototype Objects");
+
         // Get Prototype Objects
         var prototypeObjects = new List<Object>();
         GetPrototypeObjects(prototypeObjects);
 
+        //Progress.Report(progressId, ++currentStep, totalSteps, "Get All Prefabs");
+
         // Check Prefabs
         var prefabs = new List<Object>();
         GetPrefabs(prefabs);
+
+        //Progress.Report(progressId, ++currentStep, totalSteps, $"Check All Prefabs for references to Prototype Objects.");
         foreach (var prefab in prefabs)
         {
             CheckObject(prefab, prototypeObjects);
         }
 
+        //Progress.Report(progressId, ++currentStep, totalSteps, $"Get All Assets.");
+
         // Check Assets
         var assets = new List<Object>();
         GetAssets(assets);
+
+        //Progress.Report(progressId, ++currentStep, totalSteps, $"Check All Assets for references to Prototype Objects.");
         foreach (var asset in assets)
         {
             CheckObject(asset, prototypeObjects);
         }
+
+        //Progress.Report(progressId, ++currentStep, totalSteps, $"Assets Checked");
+
+        //Progress.Finish(progressId);
     }
 
     [MenuItem(menuName + "Check Open Scenes", priority = 2)]
@@ -111,12 +129,6 @@ public static class PrototypeReferenceChecker
         while (property.NextVisible(true))
         {
             if (property.propertyType != SerializedPropertyType.ObjectReference)
-            {
-                continue;
-            }
-
-            // Monobehaviours have exposed Icon & Script properties we do not want to test.
-            if (obj is MonoBehaviour && property.displayName == "Icon" || property.displayName == "Script")
             {
                 continue;
             }
