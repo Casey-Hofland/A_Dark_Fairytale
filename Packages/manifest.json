@@ -2,10 +2,11 @@
   "dependencies": {
     "com.inkle.ink-unity-integration": "https://github.com/inkle/ink-unity-integration.git#upm",
     "com.unity.2d.sprite": "1.0.0",
+    "com.unity.ai.navigation": "1.1.1",
     "com.unity.burst": "1.8.2",
     "com.unity.cinemachine": "3.0.0-pre.3",
-    "com.unity.demoteam.hair": "https://github.com/Unity-Technologies/com.unity.demoteam.hair.git",
     "com.unity.feature.characters-animation": "1.0.0",
+    "com.unity.feature.cinematic": "1.0.0",
     "com.unity.feature.worldbuilding": "1.0.1",
     "com.unity.ide.rider": "3.0.17",
     "com.unity.ide.visualstudio": "2.0.17",
@@ -15,9 +16,12 @@
     "com.unity.render-pipelines.universal": "14.0.4",
     "com.unity.terrain-tools": "5.0.2",
     "com.unity.test-framework": "1.1.33",
-    "com.unity.textmeshpro": "3.2.0-pre.3",
+    "com.unity.textmeshpro": "3.2.0-pre.4",
     "com.unity.timeline": "1.8.0",
     "com.unity.ugui": "1.0.0",
+    "com.unity.visualeffectgraph": "14.0.4",
+    "com.unityfx.outline": "0.8.5",
+    "com.xsduan.hierarchy-folders": "https://github.com/xsduan/unity-hierarchy-folders.git",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",
@@ -49,5 +53,14 @@
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
     "com.unity.modules.xr": "1.0.0"
-  }
+  },
+  "scopedRegistries": [
+    {
+      "name": "Arvtesh",
+      "url": "https://registry.npmjs.org/",
+      "scopes": [
+        "com.unityfx"
+      ]
+    }
+  ]
 }
