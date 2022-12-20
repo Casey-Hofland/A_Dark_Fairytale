@@ -17,8 +17,12 @@ MonoBehaviour:
   - Default
   - Receive Decals
   - Ignore Light
-  - Discard Layer
-  m_ValidRenderingLayers: 15
+  - Outline
+  - Unused Layer 5
+  - Unused Layer 6
+  - Unused Layer 7
+  - Unused Layer 8
+  m_ValidRenderingLayers: 255
   lightLayerName0: Light Layer default
   lightLayerName1: Light Layer 1
   lightLayerName2: Light Layer 2
