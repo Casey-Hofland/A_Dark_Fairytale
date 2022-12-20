@@ -256,6 +256,14 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unityextras.naminganalyzer": {
+      "version": "file:NamingAnalyzer",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.settings-manager": "2.0.1"
+      }
+    },
     "com.xsduan.hierarchy-folders": {
       "version": "https://github.com/xsduan/unity-hierarchy-folders.git",
       "depth": 0,
