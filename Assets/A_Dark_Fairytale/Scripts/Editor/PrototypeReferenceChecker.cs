@@ -1,4 +1,5 @@
 #nullable enable
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,15 +7,16 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public static class PrototypeReferenceChecker
+using Object = UnityEngine.Object;
+
+public class PrototypeReferenceChecker : AssetModificationProcessor
 {
     private const string menuName = "Tools/Check Prototype References/";
     private const string prototypeDirectory = "Prototype";
     private const string autoCheckPrototypeReferencesKey = nameof(autoCheckPrototypeReferencesKey);
     private const string autoCheckMenuName = menuName + "Auto Check";
 
-    [InitializeOnLoadMethod]
-    private static void AutoCheck()
+    private static string[] OnWillSaveAssets(string[] paths)
     {
         var autoCheck = EditorPrefs.GetBool(autoCheckPrototypeReferencesKey, false);
 
@@ -23,6 +25,8 @@ public static class PrototypeReferenceChecker
             CheckAssets();
             CheckOpenScenes();
         }
+
+        return paths;
     }
 
     [InitializeOnLoadMethod]
@@ -48,43 +52,29 @@ public static class PrototypeReferenceChecker
     [MenuItem(menuName + "Check Assets", priority = 1)]
     public static void CheckAssets()
     {
-        //var progressId = Progress.Start($"Check all assets for references to the \"{prototypeDirectory}\" folder.");
-        //int currentStep = 0;
-        //const int totalSteps = 6;
-
-        //Progress.Report(progressId, ++currentStep, totalSteps, "Get Prototype Objects");
-
         // Get Prototype Objects
         var prototypeObjects = new List<Object>();
         GetPrototypeObjects(prototypeObjects);
-
-        //Progress.Report(progressId, ++currentStep, totalSteps, "Get All Prefabs");
+        if (prototypeObjects.Count == 0)
+        {
+            return;
+        }
 
         // Check Prefabs
         var prefabs = new List<Object>();
         GetPrefabs(prefabs);
-
-        //Progress.Report(progressId, ++currentStep, totalSteps, $"Check All Prefabs for references to Prototype Objects.");
         foreach (var prefab in prefabs)
         {
             CheckObject(prefab, prototypeObjects);
         }
 
-        //Progress.Report(progressId, ++currentStep, totalSteps, $"Get All Assets.");
-
         // Check Assets
         var assets = new List<Object>();
         GetAssets(assets);
-
-        //Progress.Report(progressId, ++currentStep, totalSteps, $"Check All Assets for references to Prototype Objects.");
         foreach (var asset in assets)
         {
             CheckObject(asset, prototypeObjects);
         }
-
-        //Progress.Report(progressId, ++currentStep, totalSteps, $"Assets Checked");
-
-        //Progress.Finish(progressId);
     }
 
     [MenuItem(menuName + "Check Open Scenes", priority = 2)]
@@ -93,6 +83,10 @@ public static class PrototypeReferenceChecker
         // Get Prototype Objects
         var prototypeObjects = new List<Object>();
         GetPrototypeObjects(prototypeObjects);
+        if (prototypeObjects.Count == 0)
+        {
+            return;
+        }
 
         // Check Open Scenes
         var sceneObjects = new List<Object>();
