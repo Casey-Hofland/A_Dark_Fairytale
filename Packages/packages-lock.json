@@ -273,6 +273,22 @@
         "com.unity.settings-manager": "2.0.1"
       }
     },
+    "com.unityfx.outline": {
+      "version": "0.8.5",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://registry.npmjs.org"
+    },
+    "com.unityfx.outline.urp": {
+      "version": "file:UnityFx.Outline.URP",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unityfx.outline": "0.8.5",
+        "com.unity.render-pipelines.universal": "7.0.0"
+      }
+    },
     "com.xsduan.hierarchy-folders": {
       "version": "https://github.com/xsduan/unity-hierarchy-folders.git",
       "depth": 0,
