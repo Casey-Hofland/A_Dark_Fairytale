@@ -41,6 +41,6 @@ public class VolumeUpdater : MonoBehaviour
         _camera?.UpdateVolumeStack();
         yield return _updateInstruction;
 
-        yield return UpdateVolumeStackRoutine();
+        _updateVolumeStackRoutine = StartCoroutine(UpdateVolumeStackRoutine());
     }
 }
