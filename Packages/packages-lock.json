@@ -265,8 +265,8 @@
         "com.unity.render-pipelines.core": "14.0.4"
       }
     },
-    "com.unityextras.naminganalyzer": {
-      "version": "file:NamingAnalyzer",
+    "com.unityextras.namingvalidator": {
+      "version": "file:NamingValidator",
       "depth": 0,
       "source": "embedded",
       "dependencies": {
