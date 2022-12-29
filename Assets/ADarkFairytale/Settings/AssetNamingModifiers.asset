@@ -40,4 +40,4 @@ MonoBehaviour:
   - _assetType: UnityEngine.AvatarMask
     pattern: ^AM_
   - _assetType: UnityEngine.GameObject
-    pattern: ^(P|M|SK|CH)_
+    pattern: ^(ST|SK|CH|A)_
