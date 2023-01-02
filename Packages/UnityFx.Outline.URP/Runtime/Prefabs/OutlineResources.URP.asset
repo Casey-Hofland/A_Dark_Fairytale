@@ -12,6 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b503341e0a514e3489c4851727e68257, type: 3}
   m_Name: OutlineResources.URP
   m_EditorClassIdentifier: 
-  _renderShader: {fileID: 4800000, guid: 2140fc327e711b549bc9fe301e6f4621, type: 3}
+  _renderShader: {fileID: 4800000, guid: 650dd9526735d5b46b79224bc6e94025, type: 3}
   _outlineShader: {fileID: 4800000, guid: da6518c999b52e743bff80732b460ff4, type: 3}
-  _enableInstancing: 0
