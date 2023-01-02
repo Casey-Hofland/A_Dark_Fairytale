@@ -2,6 +2,7 @@
   "dependencies": {
     "com.inkle.ink-unity-integration": "https://github.com/inkle/ink-unity-integration.git#upm",
     "com.unity.2d.sprite": "1.0.0",
+    "com.unity.ai.navigation": "1.1.1",
     "com.unity.burst": "1.8.2",
     "com.unity.cinemachine": "3.0.0-pre.3",
     "com.unity.feature.characters-animation": "1.0.0",
