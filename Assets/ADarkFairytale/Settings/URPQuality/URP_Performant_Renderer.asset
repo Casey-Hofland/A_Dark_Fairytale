@@ -69,7 +69,8 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: -3582892525234461769}
   - {fileID: -8004463701692783225}
-  m_RendererFeatureMap: b763ff343b0247ce87e5173bac6eea90
+  - {fileID: 1117977942891491571}
+  m_RendererFeatureMap: b763ff343b0247ce87e5173bac6eea90f3f0c40804db830f
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
@@ -106,3 +107,20 @@ MonoBehaviour:
   m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 0
+--- !u!114 &1117977942891491571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d613f08f173d4dd895bb07b3230baa9, type: 3}
+  m_Name: Gradient Fog
+  m_EditorClassIdentifier: 
+  m_Active: 0
+  passMaterial: {fileID: 2100000, guid: 6f2c3e6dbe6224d4ba015151e0af617b, type: 2}
+  injectionPoint: 550
+  requirements: 1
+  passIndex: 1
