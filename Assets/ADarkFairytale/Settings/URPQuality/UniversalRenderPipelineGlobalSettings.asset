@@ -15,9 +15,9 @@ MonoBehaviour:
   k_AssetVersion: 3
   m_RenderingLayerNames:
   - Default
-  - Receive Decals
-  - Ignore Light
   - Outline
+  - Receive Decals
+  - Unused Layer 4
   - Unused Layer 5
   - Unused Layer 6
   - Unused Layer 7
