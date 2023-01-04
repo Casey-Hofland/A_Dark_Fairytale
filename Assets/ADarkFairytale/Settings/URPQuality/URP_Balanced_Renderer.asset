@@ -26,7 +26,7 @@ MonoBehaviour:
     _layerMask:
       serializedVersion: 2
       m_Bits: 0
-    _renderingLayerMask: 8
+    _renderingLayerMask: 2
   _renderPassEvent: 400
   _shaderPassNames: []
 --- !u!114 &-7721174767068728160
