@@ -108,10 +108,10 @@ MonoBehaviour:
       Value: 48000
       HasValue: 1
     BuildDirectory:
-      Value: 
+      Value: Desktop
       HasValue: 0
     SpeakerMode:
-      Value: 0
+      Value: 3
       HasValue: 0
     VirtualChannelCount:
       Value: 1024
@@ -359,18 +359,18 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  sourceBankPath: 
+  sourceProjectPath: FMOD/ADarkFairytale.fspro
+  sourceBankPath: FMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
-  AutomaticEventLoading: 1
-  BankLoadType: 0
+  AutomaticEventLoading: 0
+  BankLoadType: 1
   AutomaticSampleLoading: 0
   EncryptionKey: 
   ImportType: 0
   TargetAssetPath: FMODBanks
-  TargetBankFolder: 
+  TargetBankFolder: Build
   EventLinkage: 0
   LoggingLevel: 2
   SpeakerModeSettings: []
@@ -381,9 +381,16 @@ MonoBehaviour:
   VirtualChannelSettings: []
   RealChannelSettings: []
   Plugins: []
-  MasterBanks: []
-  Banks: []
-  BanksToLoad: []
+  MasterBanks:
+  - Master
+  Banks:
+  - Envirement
+  - Music
+  - NPCs
+  - PC
+  BanksToLoad:
+  - Master
+  - Master.strings
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
   AndroidUseOBB: 0
