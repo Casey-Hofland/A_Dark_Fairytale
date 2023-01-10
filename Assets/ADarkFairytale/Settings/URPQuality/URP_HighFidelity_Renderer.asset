@@ -35,7 +35,7 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 3302065f671a8450b82c9ddf07426f3a, type: 3}
   - {fileID: 2800000, guid: 56a77a3e8d64f47b6afe9e3c95cb57d5, type: 3}
   m_Shader: {fileID: 4800000, guid: 0849e84e3d62649e8882e9d6f056a017, type: 3}
---- !u!114 &-1720912371371505390
+--- !u!114 &-58513478195714358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -56,13 +56,13 @@ MonoBehaviour:
     _outlineWidth: 4
     _outlineIntensity: 2
     _outlineAlphaCutoff: 0.9
-    _outlineMode: 6
+    _outlineMode: 0
     _filterMode: 2
     _layerMask:
       serializedVersion: 2
-      m_Bits: 1
+      m_Bits: 4
     _renderingLayerMask: 2
-  _renderPassEvent: 400
+  _renderPassEvent: 500
   _shaderPassNames: []
 --- !u!114 &11400000
 MonoBehaviour:
@@ -81,9 +81,9 @@ MonoBehaviour:
   m_RendererFeatures:
   - {fileID: 380561915007593262}
   - {fileID: -1878332245247344467}
-  - {fileID: -1720912371371505390}
+  - {fileID: -58513478195714358}
   - {fileID: 7025139374640308189}
-  m_RendererFeatureMap: 2eeb119f0b074805adc0de57c6d2eee51289d3e650171ee8dd9f0b5b0a4f7e61
+  m_RendererFeatureMap: 2eeb119f0b074805adc0de57c6d2eee5ca6692354d1e30ffdd9f0b5b0a4f7e61
   m_UseNativeRenderPass: 0
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
