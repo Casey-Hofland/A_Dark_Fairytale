@@ -384,10 +384,8 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
-  - Envirement
   - Music
-  - NPCs
-  - PC
+  - SFX
   BanksToLoad:
   - Master
   - Master.strings
