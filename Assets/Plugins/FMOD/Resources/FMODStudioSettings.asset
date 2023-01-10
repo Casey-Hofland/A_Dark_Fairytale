@@ -100,7 +100,7 @@ MonoBehaviour:
       HasValue: 0
     Overlay:
       Value: 1
-      HasValue: 1
+      HasValue: 0
     Logging:
       Value: 0
       HasValue: 0
@@ -371,7 +371,7 @@ MonoBehaviour:
   ImportType: 0
   TargetAssetPath: FMODBanks
   TargetBankFolder: Build
-  EventLinkage: 0
+  EventLinkage: 1
   LoggingLevel: 2
   SpeakerModeSettings: []
   SampleRateSettings: []
