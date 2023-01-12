@@ -8,8 +8,13 @@
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-/[Mm]emoryCaptures/
-/[Uu]serSettings/
+/[Uu]ser[Ss]ettings/
+
+# MemoryCaptures can get excessive in size.
+# They also could contain extremely sensitive data
+/[Mm]emory[Cc]aptures/
+
+# Recordings can get excessive in size
 /[Rr]ecordings/
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
@@ -23,6 +28,8 @@
 
 # Visual Studio cache directory
 .vs/
+
+# Visual Studio Code cache directory
 .vscode/
 
 # Idea cache directory
@@ -60,7 +67,9 @@ debug.log
 
 # Builds
 *.apk
+*.aab
 *.unitypackage
+*.app
 
 # Crashlytics generated file
 crashlytics-build.properties
